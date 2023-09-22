@@ -29,13 +29,13 @@ export default function Home() {
                 <HomeBanner />
                 {/* Components Container */}
                 <SectionContainer className="components--container wrap wrap-px grid gap-8 sm:gap-24">
-                    {/* Features */}
+                    {/* Servicios */}
                     <MotionBTTContainer
                         transition={{ delay: 0.2, duration: 0.5 }}
                     >
-                        <SectionContainer id="features" className="features">
+                        <SectionContainer id="servicios" className="features">
                             <BadgeGroup alignment="center">
-                                <BadgeMessage>Features</BadgeMessage>
+                                <BadgeMessage>Servicios</BadgeMessage>
                             </BadgeGroup>
                             <PageTitle
                                 className="text-center mx-auto"
@@ -62,7 +62,7 @@ export default function Home() {
                     >
                         <SectionContainer className="feature-tabs">
                             <BadgeGroup alignment="center">
-                                <BadgeMessage>More Features</BadgeMessage>
+                                <BadgeMessage>Mas Servicios</BadgeMessage>
                                 <BadgeIcon icon="twemoji:waving-hand" />
                             </BadgeGroup>
                             <PageTitle
@@ -127,14 +127,11 @@ export default function Home() {
                             </CardGroup>
                         </SectionContainer>
                     </MotionBTTContainer>
-                    {/* Testimonials */}
+                    {/* Clientes */}
                     <MotionBTTContainer
                         transition={{ delay: 0.2, duration: 0.5 }}
                     >
-                        <SectionContainer
-                            id="testimonials"
-                            className="benefits"
-                        >
+                        <SectionContainer id="clientesZ" className="benefits">
                             <BadgeGroup alignment="left">
                                 <BadgeMessage>Testiomonios</BadgeMessage>
                                 <BadgeIcon icon="twemoji:waving-hand" />

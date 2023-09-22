@@ -34,6 +34,7 @@ export const Header = () => {
                             role="button"
                             href={links.whatsapp}
                             target="_blank"
+                            rel="noopener noreferrer"
                             className="btn btn--secondary lemonsqueezy-button ml-4"
                         >
                             Contáctanos

@@ -10,12 +10,12 @@ const DATA = [
         title: "Template",
         items: [
             {
-                label: "Features",
-                href: "#features"
+                label: "Servicios",
+                href: "#servicios"
             },
             {
-                label: "Testimonios",
-                href: "#testimonios"
+                label: "Clientes",
+                href: "#clientes"
             },
             {
                 label: "FAQ",

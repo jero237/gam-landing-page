@@ -4,9 +4,9 @@ import { Icon } from "@iconify/react";
 import { useRouter } from "next/router";
 
 const navigation = [
-    { name: "Features", to: "#features", href: "/#features" },
-    { name: "Testimonials", to: "#testimonials", href: "/#testimonials" },
-    { name: "FAQ?", to: "#faq", href: "/#faq" },
+    { name: "Servicios", to: "#servicios", href: "/#servicios" },
+    { name: "Clientes", to: "#clientes", href: "/#clientes" },
+    { name: "FAQ", to: "#faq", href: "/#faq" },
     {
         name: "¿Dónde estamos?",
         href: "https://maps.app.goo.gl/TjsExpzwBuArrAwT6",
