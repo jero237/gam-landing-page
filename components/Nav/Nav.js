@@ -8,8 +8,8 @@ const navigation = [
     { name: "Testimonials", to: "#testimonials", href: "/#testimonials" },
     { name: "FAQ?", to: "#faq", href: "/#faq" },
     {
-        name: "Contact",
-        href: "https://cjluntok.com/",
+        name: "¿Dónde estamos?",
+        href: "https://maps.app.goo.gl/TjsExpzwBuArrAwT6",
         isArrow: true,
         target: "_blank"
     }

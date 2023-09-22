@@ -4,6 +4,7 @@ import { SectionContainer } from "@components/Section";
 import { Nav } from "@components/Nav";
 import { ButtonGroup, Button } from "@components/Button";
 import { Icon } from "@iconify/react";
+import { links } from "@utils/links";
 
 export const Header = () => {
     return (
@@ -31,11 +32,12 @@ export const Header = () => {
                     <ButtonGroup className="hidden md:block">
                         <a
                             role="button"
-                            href="https://avenuelabs.lemonsqueezy.com/checkout/buy/df8ccd46-fa63-4384-b2aa-c4c9b8ad3ef0?embed=1"
+                            href={links.whatsapp}
+                            target="_blank"
                             className="btn btn--secondary lemonsqueezy-button ml-4"
                         >
-                            Get Template
-                            <Icon icon="material-symbols:arrow-forward-rounded" />
+                            Contáctanos
+                            <Icon icon="material-symbols`:arrow-forward-rounded" />
                         </a>
                     </ButtonGroup>
                 </SectionContainer>

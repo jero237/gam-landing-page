@@ -5,6 +5,7 @@ import { MotionBTTContainer, MotionInfiniteImage } from "@components/Motion";
 import { SectionContainer } from "@components/Section";
 import { PageTitle } from "@components/Title";
 import { Icon } from "@iconify/react";
+import { links } from "@utils/links";
 import Image from "next/image";
 
 export const HomeBanner = () => {
@@ -21,16 +22,15 @@ export const HomeBanner = () => {
                 {/* Appear Second */}
                 <MotionBTTContainer transition={{ delay: 0.4, duration: 0.5 }}>
                     <PageTitle className="text-center mx-auto" type="heavy">
-                        The effortless way to plan your meals with the power of
-                        Notion.
+                        Service electronico de televisores
                     </PageTitle>
                 </MotionBTTContainer>
                 {/* Appear Third */}
                 <MotionBTTContainer transition={{ delay: 0.6, duration: 0.5 }}>
                     <Content className="text-center" alignment="center">
                         <p>
-                            Streamline your nutrition journey and achieve your
-                            health goals with ease.{" "}
+                            Especialistas en reparación y servicio técnico para
+                            TV{" "}
                         </p>
                     </Content>
                     <div className="mt-6 mb-16 text-center">
@@ -38,10 +38,10 @@ export const HomeBanner = () => {
                             <Button href="#features">Features</Button>
                             <a
                                 role="button"
-                                href="https://avenuelabs.lemonsqueezy.com/checkout/buy/df8ccd46-fa63-4384-b2aa-c4c9b8ad3ef0?embed=1"
+                                href={links.whatsapp}
                                 className="btn btn--secondary lemonsqueezy-button"
                             >
-                                Get Template
+                                Contáctanos
                                 <Icon icon="material-symbols:arrow-forward-rounded" />
                             </a>
                         </ButtonGroup>
