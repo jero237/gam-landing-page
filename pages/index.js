@@ -41,23 +41,19 @@ export default function Home() {
                                 className="text-center mx-auto"
                                 type="default"
                             >
-                                Simplify Your Nutrition Journey with NutriTrack
+                                Más de 20 años de experiencia en el rubro
                             </PageTitle>
                             <Content className="text-center" alignment="center">
                                 <p>
-                                    Hey there! Welcome to NutriTrack, the
-                                    ultimate nutrition meal planner powered by
-                                    Notion. We&apos;ve got some awesome features
-                                    lined up to make your nutrition journey a
-                                    piece of cake (pun intended). Check them
-                                    out:
+                                    Nos especializamos en recuperación de
+                                    placas y cambios de pantallas.{" "}
                                 </p>
                             </Content>
                             <ContentImage />
                         </SectionContainer>
                     </MotionBTTContainer>
                     {/* Card Container Tabs */}
-                    <MotionBTTContainer
+                    {/* <MotionBTTContainer
                         transition={{ delay: 0.2, duration: 0.5 }}
                     >
                         <SectionContainer className="feature-tabs">
@@ -126,7 +122,7 @@ export default function Home() {
                                 </Card>
                             </CardGroup>
                         </SectionContainer>
-                    </MotionBTTContainer>
+                    </MotionBTTContainer> */}
                     {/* Clientes */}
                     <MotionBTTContainer
                         transition={{ delay: 0.2, duration: 0.5 }}
@@ -143,7 +139,7 @@ export default function Home() {
                             <Columns />
                         </SectionContainer>
                     </MotionBTTContainer>
-                    {/* Accordions */}
+                    {/* Accordions
                     <MotionBTTContainer
                         transition={{ delay: 0.2, duration: 0.5 }}
                     >
@@ -162,7 +158,7 @@ export default function Home() {
                             </PageTitle>
                             <Accordion />
                         </SectionContainer>
-                    </MotionBTTContainer>
+                    </MotionBTTContainer> */}
                 </SectionContainer>
             </div>
         </Layout>

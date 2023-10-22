@@ -29,7 +29,7 @@ export const Header = () => {
                 </div>
                 <SectionContainer className="flex items-center ml-auto">
                     <Nav />
-                    <ButtonGroup className="hidden md:block">
+                    <ButtonGroup className="hidden md:block" children={<div />}>
                         <a
                             role="button"
                             href={links.whatsapp}

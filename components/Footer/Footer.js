@@ -73,7 +73,7 @@ export const Footer = () => {
                                     />
                                 </Link>
                                 {/* Get Template button; remove if not used */}
-                                <ButtonGroup alignment="left">
+                                <ButtonGroup alignment="left" children={<div />}>
                                     <a
                                         role="button"
                                         href={links.whatsapp}
