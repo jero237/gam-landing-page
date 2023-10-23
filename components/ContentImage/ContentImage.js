@@ -10,7 +10,7 @@ const ContentImageData = [
         content:
             "Diagnnosticamos tu TV sin cargo y te damos un presupuesto sin compromiso. Si no te convence, no pagas nada. ¡Así de simple!",
         align: "left",
-        image: "/tvs.jpg"
+        image: "/budget.jpg"
     },
     {
         id: uuid(),
@@ -19,7 +19,7 @@ const ContentImageData = [
         content:
             "Trabajamos todas las marcas y modelos con tecnologías LCD, LED, OLED, QLED, 4k UHD y Smart TV.",
         align: "right",
-        image: "/tvs.jpg"
+        image: "/tv-brands.png"
     },
     {
         id: uuid(),

@@ -77,7 +77,9 @@ export const Footer = () => {
                                     <a
                                         role="button"
                                         href={links.whatsapp}
-                                        className="btn btn--secondary"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="btn btn--secondary ml-4"
                                     >
                                         Contáctanos
                                         <Icon icon="material-symbols:arrow-forward-rounded" />
