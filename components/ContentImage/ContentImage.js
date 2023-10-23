@@ -8,7 +8,7 @@ const ContentImageData = [
         id: uuid(),
         title: "Presupuestos sin cargo",
         content:
-            "Diagnnosticamos tu TV sin cargo y te damos un presupuesto sin compromiso. Si no te convence, no pagas nada. ¡Así de simple!",
+            "Diagnosticamos tu TV sin cargo y te damos un presupuesto sin compromiso. Si no te convence, no pagas nada. ¡Así de simple!",
         align: "left",
         image: "/budget.jpg"
     },
@@ -25,7 +25,7 @@ const ContentImageData = [
         id: uuid(),
         title: "Garantía de 3 meses",
         content:
-            "Todos nuestros trabajos tienen una garantía de 3 meses. Si el problema persiste, lo revisamos nuevamente sin cargo.",
+            "Todos nuestros trabajos vienen respaldados por una garantía de 3 meses, lo que proporciona a nuestros clientes confianza y seguridad en sus reparaciones.",
         align: "left",
         image: "/handshake.jpg"
     }

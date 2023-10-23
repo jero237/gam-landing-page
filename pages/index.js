@@ -48,7 +48,7 @@ export default function Home() {
                                 <p>
                                     Nos especializamos en la reparación completa
                                     de televisores, incluyendo la recuperación o
-                                    o sustitución de placas y pantallas, así como
+                                    sustitución de placas y pantallas, así como
                                     la carga de firmware en todas las marcas.
                                     Utilizamos repuestos originales y respaldamos
                                     todos nuestros trabajos con una garantía de 3 meses.
