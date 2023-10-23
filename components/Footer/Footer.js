@@ -73,11 +73,11 @@ export const Footer = () => {
                                     />
                                 </Link>
                                 {/* Get Template button; remove if not used */}
-                                <ButtonGroup alignment="left" children={<div />}>
+                                <ButtonGroup alignment="left">
                                     <a
                                         role="button"
                                         href={links.whatsapp}
-                                        className="btn btn--secondary lemonsqueezy-button"
+                                        className="btn btn--secondary"
                                     >
                                         Contáctanos
                                         <Icon icon="material-symbols:arrow-forward-rounded" />

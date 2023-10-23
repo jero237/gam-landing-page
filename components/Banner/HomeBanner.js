@@ -27,12 +27,12 @@ export const HomeBanner = () => {
                         </p>
                     </Content>
                     <div className="mt-6 mb-16 text-center">
-                        <ButtonGroup alignment="center" children={<div />}>
+                        <ButtonGroup alignment="center">
                             <Button href="#servicios">Servicios</Button>
                             <a
                                 role="a"
                                 href={links.whatsapp}
-                                className="btn btn--secondary lemonsqueezy-button"
+                                className="btn btn--secondary"
                             >
                                 Contáctanos
                                 <Icon icon="material-symbols:arrow-forward-rounded" />

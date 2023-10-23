@@ -29,16 +29,16 @@ export const Header = () => {
                 </div>
                 <SectionContainer className="flex items-center ml-auto">
                     <Nav />
-                    <ButtonGroup className="hidden md:block" children={<div />}>
+                    <ButtonGroup className="hidden md:block">
                         <a
                             role="button"
                             href={links.whatsapp}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="btn btn--secondary lemonsqueezy-button ml-4"
+                            className="btn btn--secondary ml-4"
                         >
                             Contáctanos
-                            <Icon icon="material-symbols`:arrow-forward-rounded" />
+                            <Icon icon="material-symbols:arrow-forward-rounded" />
                         </a>
                     </ButtonGroup>
                 </SectionContainer>
