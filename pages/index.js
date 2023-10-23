@@ -36,6 +36,7 @@ export default function Home() {
                         <SectionContainer id="servicios" className="features">
                             <BadgeGroup alignment="center">
                                 <BadgeMessage>Servicios</BadgeMessage>
+                                <BadgeIcon icon="mdi:account-service" />
                             </BadgeGroup>
                             <PageTitle
                                 className="text-center mx-auto"
@@ -45,8 +46,12 @@ export default function Home() {
                             </PageTitle>
                             <Content className="text-center" alignment="center">
                                 <p>
-                                    Nos especializamos en recuperación de
-                                    placas y cambios de pantallas.{" "}
+                                    Nos especializamos en la reparación completa
+                                    de televisores, incluyendo la recuperación o
+                                    o sustitución de placas y pantallas, así como
+                                    la carga de firmware en todas las marcas.
+                                    Utilizamos repuestos originales y respaldamos
+                                    todos nuestros trabajos con una garantía de 3 meses.
                                 </p>
                             </Content>
                             <ContentImage />
@@ -130,11 +135,10 @@ export default function Home() {
                         <SectionContainer id="clientesZ" className="benefits">
                             <BadgeGroup alignment="left">
                                 <BadgeMessage>Testiomonios</BadgeMessage>
-                                <BadgeIcon icon="twemoji:waving-hand" />
+                                <BadgeIcon icon="ic:round-star-rate" />
                             </BadgeGroup>
                             <PageTitle className="" type="default">
-                                This is what our customers have to say about
-                                this template
+                                Esto es lo que dicen nuestros clientes:
                             </PageTitle>
                             <Columns />
                         </SectionContainer>

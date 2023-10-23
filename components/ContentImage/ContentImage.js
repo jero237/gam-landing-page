@@ -23,11 +23,11 @@ const ContentImageData = [
     },
     {
         id: uuid(),
-        title: "Trabajamos con las principales marcas del mercado",
+        title: "Garantía de 3 meses",
         content:
-            "We've got your grocery shopping covered! NutriTrack includes a handy shopping list feature. As you plan your meals, the template automatically generates a comprehensive shopping list. No more forgotten items or aimless wandering in the supermarket. Shopping for healthy ingredients has never been easier!",
+            "Todos nuestros trabajos tienen una garantía de 3 meses. Si el problema persiste, lo revisamos nuevamente sin cargo.",
         align: "left",
-        image: "/features2.png"
+        image: "/handshake.jpg"
     }
 ];
 
