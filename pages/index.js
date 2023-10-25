@@ -20,7 +20,7 @@ import {
 
 export async function getStaticProps() {
     // TODO: replace with your own key
-    const res = await fetch('https://maps.googleapis.com/maps/api/place/details/json?fields=reviews,rating,user_ratings_total&reviews_no_translations=true&place_id=ChIJQwZ8mbSptZURi_ND09STmC4&key=AIzaSyA8W2KP-oTrg5fwZN7gZY4Xh2SL8D6lOgo')
+    const res = await fetch(`https://maps.googleapis.com/maps/api/place/details/json?fields=reviews,rating,user_ratings_total&reviews_no_translations=true&place_id=ChIJQwZ8mbSptZURi_ND09STmC4&key=${process.env.MAPS_API_KEY}`)
     const places = await res.json()
     return { props: { places }, revalidate: 86400 }
 }
