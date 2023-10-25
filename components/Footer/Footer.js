@@ -7,7 +7,7 @@ import { links } from "@utils/links";
 
 const DATA = [
     {
-        title: "Template",
+        title: "Menú",
         items: [
             {
                 label: "Servicios",
@@ -16,34 +16,30 @@ const DATA = [
             {
                 label: "Clientes",
                 href: "#clientes"
-            },
-            {
-                label: "FAQ",
-                href: "#faq"
             }
         ]
     },
     {
-        title: "Company",
+        title: "Redes",
         items: [
             {
-                label: "About",
-                href: "https://github.com/christian-luntok/",
-                target: "_blank"
-            },
-            {
-                label: "Twitter",
-                href: "https://github.com/christian-luntok/",
-                target: "_blank"
-            },
-            {
-                label: "Instagram",
-                href: "https://github.com/christian-luntok/",
+                label: "Email",
+                href: links.email,
                 target: "_blank"
             },
             {
                 label: "Facebook",
-                href: "https://github.com/christian-luntok/",
+                href: links.facebook,
+                target: "_blank"
+            },
+            {
+                label: "Instagram",
+                href: links.instagram,
+                target: "_blank"
+            },
+            {
+                label: "WhatsApp",
+                href: links.whatsapp,
                 target: "_blank"
             }
         ]
@@ -130,15 +126,15 @@ export const Footer = () => {
             <SectionContainer className="footer-credits relative z-10">
                 <div className="wrap wrap-px py-6">
                     <p className="my-0">
-                        © {year} Nutritrack. All rights reserved{" - "}
+                        © {year} GAM Electronica. All rights reserved{" - "}
                         <span className="font-normal">
-                            A template by{" "}
+                            Web made by{" "}
                             <Link
                                 className="transition-colors duration-300 hover:underline"
-                                href="https://cjluntok.com"
+                                href="https://www.linkedin.com/in/jeronimo-balestra/"
                                 target="_blank"
                             >
-                                Christian Luntok.
+                                Jerónimo Balestra.
                             </Link>
                         </span>
                     </p>

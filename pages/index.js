@@ -133,9 +133,9 @@ export default function Home() {
                     <MotionBTTContainer
                         transition={{ delay: 0.2, duration: 0.5 }}
                     >
-                        <SectionContainer id="clientesZ" className="benefits">
+                        <SectionContainer id="clientes" className="benefits">
                             <BadgeGroup alignment="left">
-                                <BadgeMessage>Testiomonios</BadgeMessage>
+                                <BadgeMessage>Clientes</BadgeMessage>
                                 <BadgeIcon icon="ic:round-star-rate" />
                             </BadgeGroup>
                             <PageTitle className="" type="default">

@@ -6,7 +6,6 @@ import { useRouter } from "next/router";
 const navigation = [
     { name: "Servicios", to: "#servicios", href: "/#servicios" },
     { name: "Clientes", to: "#clientes", href: "/#clientes" },
-    { name: "FAQ", to: "#faq", href: "/#faq" },
     {
         name: "¿Dónde estamos?",
         href: "https://maps.app.goo.gl/TjsExpzwBuArrAwT6",
@@ -40,9 +39,8 @@ export const Nav = () => {
                     />
                 </button>
                 <div
-                    className={`header-nav--menu-container z-20 ${
-                        isNavOpen ? "show" : "hide"
-                    }`}
+                    className={`header-nav--menu-container z-20 ${isNavOpen ? "show" : "hide"
+                        }`}
                     id="navbar-default"
                 >
                     <ul className="header-nav--menu">
