@@ -37,11 +37,11 @@ const ColumnData = [
 
 export const Columns = ({ places }) => {
     return (
-        <SectionContainer className="benefits-lists grid gap-x-8 gap-y-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-5 mt-10">
-            {places.result.reviews.sort((a, b) => b.rating - a.rating).map((item, i) => (
+        <SectionContainer className="benefits-lists flex gap-x-8 gap-y-16 flex-wrap justify-normal mt-10 sm:justify-evenly">
+            {places.result.reviews.filter((a) => a.rating >= 3).sort((a, b) => b.rating - a.rating).map((item, i) => (
                 <div
                     key={i}
-                    className="benefits-list--item text-[#737373] text-left"
+                    className="benefits-list--item text-[#737373] text-left max-w-xs"
                 >
                     <a href={item.author_url}>
                         <Image
@@ -66,7 +66,7 @@ export const Columns = ({ places }) => {
                             />
                         ))}
                     </div>
-                    <p>{item.text.slice(0, 125).trim()}{item.text.length > 125 && "..."}</p>
+                    <p>{item.text.slice(0, 150).trim()}{item.text.length > 150 && "..."}</p>
                 </div>
             ))}
         </SectionContainer>
