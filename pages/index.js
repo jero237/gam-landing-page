@@ -22,7 +22,8 @@ export default function Home() {
         <Layout className="">
             <SEO
                 title="GAM Electronica"
-                description="Discover NutriTrack, the effortless way to plan your meals with the power of Notion. Streamline your nutrition journey and achieve your health goals with ease."
+                description="Especialistas en reparación y servicio técnico para
+                            TVs de última generación"
             />
             <div className="main-wrapper bg-[#F3F5F8] relative z-10 pb-20 pt-20 ">
                 {/* { Page Banner } */}

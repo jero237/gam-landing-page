@@ -61,13 +61,13 @@ export const Footer = () => {
                 <div className="footer--content-container py-16">
                     <div className="footer-links mb-12 grid grid-cols-2 gap-8 md:mb-16 md:grid-cols-8 lg:grid-cols-12">
                         <div className="col-span-6">
-                            <div className="footer--logo grid gap-8">
+                            <div className="footer--logo grid gap-8 max-w-xs">
                                 <Link href="/">
                                     <Image
-                                        src="/nutritrack.svg"
+                                        src="/logo.png"
                                         alt="logo"
-                                        className="h-10 w-auto"
-                                        height="25"
+                                        className="h-auto w-full"
+                                        height="100"
                                         width="100"
                                         priority
                                     />
@@ -79,7 +79,7 @@ export const Footer = () => {
                                         href={links.whatsapp}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="btn btn--secondary ml-4"
+                                        className="btn btn--secondary w-full"
                                     >
                                         Contáctanos
                                         <Icon icon="material-symbols:arrow-forward-rounded" />

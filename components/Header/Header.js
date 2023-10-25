@@ -17,10 +17,10 @@ export const Header = () => {
                     <h1 className="logo mb-0">
                         <Link href="/">
                             <Image
-                                src="/nutritrack.svg"
+                                src="/logo.png"
                                 alt="logo"
-                                className="h-6 w-auto"
-                                height="24"
+                                className="h-8 w-auto"
+                                height="100"
                                 width="100"
                                 priority
                             />
