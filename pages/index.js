@@ -8,6 +8,7 @@ import { ContentImage } from "@components/ContentImage";
 import { Content } from "@components/Content";
 import { Accordion } from "@components/Accordion";
 import { MotionBTTContainer } from "@components/Motion";
+import { Icon } from "@iconify/react";
 import SEO from "@components/SEO/SEO";
 import {
     CardBody,
@@ -17,7 +18,14 @@ import {
     Card
 } from "@components/Card";
 
-export default function Home() {
+export async function getStaticProps() {
+    // TODO: replace with your own key
+    const res = await fetch('https://maps.googleapis.com/maps/api/place/details/json?fields=reviews,rating,user_ratings_total&reviews_no_translations=true&place_id=ChIJQwZ8mbSptZURi_ND09STmC4&key=AIzaSyA8W2KP-oTrg5fwZN7gZY4Xh2SL8D6lOgo')
+    const places = await res.json()
+    return { props: { places }, revalidate: 86400 }
+}
+
+export default function Home({ places }) {
     return (
         <Layout className="">
             <SEO
@@ -130,7 +138,7 @@ export default function Home() {
                         </SectionContainer>
                     </MotionBTTContainer> */}
                     {/* Clientes */}
-                    <MotionBTTContainer
+                    {places.result && <MotionBTTContainer
                         transition={{ delay: 0.2, duration: 0.5 }}
                     >
                         <SectionContainer id="clientes" className="benefits">
@@ -141,9 +149,22 @@ export default function Home() {
                             <PageTitle className="" type="default">
                                 Esto es lo que dicen nuestros clientes:
                             </PageTitle>
-                            <Columns />
+                            <div className="flex gap-1 items-center">
+                                <p className="text-4xl">{places.result.rating}</p>
+                                {Array.from({ length: places.result.rating }).map((_, i) => (
+                                    <Icon
+                                        key={i}
+                                        icon="solar:star-bold"
+                                        height={30}
+                                        width={30}
+                                        className="mr-1 text-secondary-500"
+                                    />
+                                ))}
+                                {places.result.user_ratings_total} {places.result.user_ratings_total > 1 ? "Reseñas" : "Reseña"}
+                            </div>
+                            <Columns places={places} />
                         </SectionContainer>
-                    </MotionBTTContainer>
+                    </MotionBTTContainer>}
                     {/* Accordions
                     <MotionBTTContainer
                         transition={{ delay: 0.2, duration: 0.5 }}

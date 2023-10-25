@@ -1,6 +1,8 @@
 import { SectionContainer } from "@components/Section";
 import { Icon } from "@iconify/react";
 import { v4 as uuid } from "uuid";
+import Image from "next/image";
+
 
 const ColumnData = [
     {
@@ -33,42 +35,38 @@ const ColumnData = [
     }
 ];
 
-export const Columns = () => {
+export const Columns = ({ places }) => {
     return (
-        <SectionContainer className="benefits-lists grid gap-x-8 gap-y-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-16">
-            {ColumnData.map((item) => (
+        <SectionContainer className="benefits-lists grid gap-x-8 gap-y-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-5 mt-10">
+            {places.result.reviews.sort((a, b) => b.rating - a.rating).map((item, i) => (
                 <div
-                    id={item.id}
-                    key={item.id}
+                    key={i}
                     className="benefits-list--item text-[#737373] text-left"
                 >
-                    <Icon icon={item.icon} className="mb-4 w-10 h-10 my-2" />
-                    <h3 className="text-xl mb-2 font-medium text-black">
-                        {item.title}
-                    </h3>
-                    <p>{item.content}</p>
-                    <o className="flex">
-                        <Icon
-                            icon="solar:star-bold"
-                            className="h-10 mr-1 text-secondary-500"
+                    <a href={item.author_url}>
+                        <Image
+                            src={item.profile_photo_url}
+                            width={100}
+                            height={100}
+                            alt={item.author_name}
+                            objectFit="cover"
+                            loading="lazy"
+                            className={`w-auto h-8`}
                         />
-                        <Icon
-                            icon="solar:star-bold"
-                            className="h-10 mr-1 text-secondary-500"
-                        />
-                        <Icon
-                            icon="solar:star-bold"
-                            className="h-10 mr-1 text-secondary-500"
-                        />
-                        <Icon
-                            icon="solar:star-bold"
-                            className="h-10 mr-1 text-secondary-500"
-                        />
-                        <Icon
-                            icon="solar:star-bold"
-                            className="h-10 mr-1 text-secondary-500"
-                        />
-                    </o>
+                        <h3 className="text-xl m-0 font-medium text-black">
+                            {item.author_name}
+                        </h3>
+                    </a>
+                    <div className="flex m-0">
+                        {Array.from({ length: item.rating }).map((_, i) => (
+                            <Icon
+                                key={i}
+                                icon="solar:star-bold"
+                                className="h-10 mr-1 text-secondary-500"
+                            />
+                        ))}
+                    </div>
+                    <p>{item.text.slice(0, 125).trim()}{item.text.length > 125 && "..."}</p>
                 </div>
             ))}
         </SectionContainer>
