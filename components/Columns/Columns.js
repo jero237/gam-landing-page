@@ -38,7 +38,7 @@ const ColumnData = [
 export const Columns = ({ places }) => {
     return (
         <SectionContainer className="benefits-lists flex gap-x-8 gap-y-16 flex-wrap justify-normal mt-10 sm:justify-evenly">
-            {places.result.reviews.filter((a) => a.rating >= 3).sort((a, b) => b.rating - a.rating).map((item, i) => (
+            {places.result.reviews.filter((a) => a.rating >= 4).sort((a, b) => b.rating - a.rating).map((item, i) => (
                 <div
                     key={i}
                     className="benefits-list--item text-[#737373] text-left max-w-xs"
